@@ -1,0 +1,14 @@
+     1                                  	section .data
+     2 00000000 546869732069732061-     	a db "This is a string",10,0
+     2 00000009 20737472696E670A00 
+     3 00000012 0A00000014000000        	c dd 10,20
+     4 0000001A 140000000A000000        	d dd 20,10
+     5 00000022 140000000A000000        	b dd 20,10
+     6                                  	section .text
+     7                                  	global main
+     8                                  main:
+     9 00000000 89D8                    	mov eax,ebx
+    10 00000002 89CB                    abc:mov ebx,ecx
+    11 00000004 01D8                    	add eax,ebx
+    12 00000006 BB0A000000              	mov ebx,10
+    13 0000000B B90A000000              	mov ecx,10
